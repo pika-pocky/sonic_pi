@@ -62,7 +62,7 @@ x=1
 sleep 8
 x=100000
 live_loop :B do
-  6.times do
+  12.times do
     sample :bd_haus
     sleep 0.5
     sample :bd_haus
@@ -74,7 +74,7 @@ live_loop :B do
   end
   stop
 end
-sleep 4
+sleep 8
 live_loop :A do
   4.times do
     sample :bd_haus
@@ -91,4 +91,3 @@ live_loop :A do
   stop
 end
 sleep 8
-
