@@ -1,10 +1,9 @@
 xxxvocal="C:/Users/rafae/Downloads/xxx soft vocal.wav"
-shirokuvocal="C:/Users/rafae/Downloads/shiroku vocal no spike.wav"
 x=0.1
 y=0.125
 array=[:a2,:c3,:a3,:c3,:a3]
 bro=0
-define :awesomesawce do |a,b,c,d,e,f,g,h|
+define :per do |a,b,c,d,e,f,g,h|
   play a, amp: 0.25
   sleep 0.25
   play b, amp: 0.25
@@ -114,6 +113,6 @@ live_loop :pulse do
 end
 sleep 10
 use_synth :kalimba
-awesomesawce :C4,:E4,:G4,:C5,:D4,:F4,:A4,:D5
-awesomesawce :E4,:G4,:B4,:E5,:F4,:A4,:C5,:F5
+per :C4,:E4,:G4,:C5,:D4,:F4,:A4,:D5
+per :E4,:G4,:B4,:E5,:F4,:A4,:C5,:F5
 sleep 20
